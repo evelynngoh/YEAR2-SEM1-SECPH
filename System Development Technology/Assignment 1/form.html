@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <!-- CSS File -->
+    <style>
+        img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    </style>
+</head>
+<body>
+    <img src="logo_utm.png" alt="This is UTM Logo" width="450" height="150">
+    <h1 style="text-align: center;">Student Registration Form</h1>
+    <h3 style="background-color:rgb(135, 162, 255);">Student Personal Details:</h3>
+    
+    <form action="" method="POST">
+        <label>Name: </label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label>Student ID: </label>
+        <input type="text" id="studentID" name="studentID" required><br>
+
+        <label>Email: </label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label>Phone Number: </label>
+        <input type="text" id="phoneNO" name="phoneNO" required><br>
+
+        <label>Gender: </label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label><br>
+
+        <label for="birthday">Date of Birth: </label>
+        <input type="date" id="birthday" name="birthday" required><br>  
+
+        <h3 style="background-color: rgb(196, 215, 255);">Academic Information:</h3>
+        <label for="program">Program of Study:</label>
+        <select id="program" name="program">
+            <option value="dataEngineering">Data Engineering</option>
+            <option value="software">Software Engineering</option>
+            <option value="network">Network Security</option>
+            <option value="graphic">Graphic Design</option>
+            <option value="bioinformatics">Bioinformatics</option>
+        </select><br>
+
+        <label for="year">Year of Study:</label>
+        <select id="year" name="year">
+            <option value="year1">Year 1</option>
+            <option value="year2">Year 2</option>
+            <option value="year3">Year 3</option>
+            <option value="year4">Year 4</option>
+        </select><br>
+
+        <h3 style="background-color: rgb(255, 215, 196);">Subjects Selection:</h3>
+        <label for="subject">Subjects:</label><br>
+        <input type="checkbox" id="subj1" name="subj1" value="networkcom">
+        <label for="subj1">Network Communications</label><br>
+        
+        <input type="checkbox" id="subj2" name="subj2" value="database">
+        <label for="subj2">Database</label><br>
+        
+        <input type="checkbox" id="subj3" name="subj3" value="softwareengineering">
+        <label for="subj3">Software Engineering</label><br>
+        
+        <input type="checkbox" id="subj4" name="subj4" value="SDT">
+        <label for="subj4">System Development Technology</label><br>
+        
+        <input type="checkbox" id="subj5" name="subj5" value="DSA">
+        <label for="subj5">Data Structure & Algorithm</label><br><br>
+        
+        <input type="reset" value="Reset" style="background-color: rgb(237, 23, 23);">
+        <input type="submit" value="Submit" style="background-color: rgb(237, 23, 23);">
+
+    </form>
+</body>
+</html>
